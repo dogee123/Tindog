@@ -1,4 +1,7 @@
-
+html{
+  position: relative;
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat";
   text-align: center;
@@ -28,7 +31,7 @@ p {
 /* Containers */
 
 .container-fluid{
-  padding: 7% 15%;
+  /* padding: 7% 15%; */
 }
 
 /* Sections */
@@ -45,8 +48,12 @@ p {
 /* Navigation Bar */
 
 .navbar {
-  padding: 0 0 4.5rem;
+  padding: 20px;
+  box-shadow: 0 2px 9px 2px rgba(138, 0, 0, 0.2);
+  /* background-color: rgb(255, 255, 255,0.2); */
+  /* background-color: white; */
 }
+
 
 .navbar-brand {
   font-family: "Ubuntu";
@@ -61,6 +68,7 @@ p {
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat-Light";
+  color: white;
 }
 
 /* Buttons */
@@ -78,7 +86,9 @@ p {
 }
 
 #title .container-fluid {
-  padding: 3% 15% 7%;
+  height: 100vh;
+  padding: 50px;
+  overflow: hidden;
 }
 
 /* Title Image */
@@ -117,6 +127,8 @@ p {
 
 #testimonials {
   background-color: #ef8172;
+  height: 400px;
+  padding: 50px;
 }
 
 .testimonial-text {
@@ -142,7 +154,10 @@ p {
 }
 
 /* Pricing Section */
-
+.card:hover{
+  box-shadow: 0px 10px 10px 10px rgb(26, 26, 26,0.05);
+  border: none;
+}
 #pricing {
   padding: 100px;
 }
@@ -157,7 +172,9 @@ p {
 }
 
 /* CTA Section */
-
+.download-apps{
+  padding: 50px;
+}
 
 /* Footer Section */
 /* ----------------- Footer --------------------- */
@@ -225,19 +242,14 @@ footer.footer .rights h4 a{
     color: var(--white);
 }
 
-footer.footer .move-up{
-    position: absolute;
-    right: 6%;
-    top: 50%;
-}
 
-footer.footer .move-up span{
-    color: var(--midnight);
-}
-
-footer.footer .move-up span:hover{
-    color: var(--white);
-    cursor: pointer;
+footer .totop{
+  position: sticky;
+  bottom: 10px;
+  right: 20px;
+  background-color: blue;
+  color: white;
+  padding: 20px;
 }
 
 /* ---------x------- Footer ----------x---------- */
